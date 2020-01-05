@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:b="http://bootsfaces.net/ui">
+
+
+<h:head>
+	<f:facet name="first">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	</f:facet>
+
+	<h:outputStylesheet name="webjars/font-awesome/4.4.0/css/font-awesome.css" />
+
+	<title>MedFarma</title>
+	
+
+</h:head>
+
+<h:body>
+	
+	<h:outputStylesheet name="navbar.css" library="css" />
+	
+	<b:column visible="xs" style="padding: 0;">
+		
+		<div class="navbar">
+			
+			<p:commandLink oncomplete="PF('sidebar2').show()" styleClass="bntMenu">
+				<i class="fa fa-align-justify"></i>
+			 </p:commandLink>
+			
+			<div class="logo">
+				<img src="../resources/assets/logoNav.png" alt="logo" />
+			</div>
+		
+
+		</div>
+		
+	
+	
+		<p:sidebar widgetVar="sidebar2" baseZIndex="10000">
+			
+		</p:sidebar>
+	
+	</b:column>
+
+	<b:column visible="sm,md,lg">
+
+	</b:column>
+	
+	<ui:insert name="content"></ui:insert>
+
+</h:body>
+
+</html>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Login - MedFarma</title>
+        <meta name="author" content="Caio e Gustavo"></meta>
+        <h:outputStylesheet name="login.css" library="css" />
+        
+    </h:head>
+
+<h:body>
+
+<div class="content">
+		<div class="modal">
+			
+			<h:form>
+				<b:growl id="growlMsg" globalOnly="true" placementFrom="top"
+					show-detail="true" show-summary="false" delay="2000" escape="true" />
+
+				<img src="resources/assets/logoLogin.png" alt="Logo do login" />
+
+				<div class="input-group-def">
+					<b:inputText id="email" placeholder="Usuário" styleClass="input-form"  value="#{loginBean.username}" > 
+						<f:facet name="prepend">
+							<b:icon name="user" />
+						</f:facet>
+					</b:inputText>
+					
+					<b:inputText id="password" placeholder="Senha" type="password" styleClass="input-form" value="#{loginBean.password}" > 
+						<f:facet name="prepend">
+							<b:icon name="glyphicon glyphicon-lock" />
+						</f:facet>
+					</b:inputText>
+				</div>
+				
+				<b:commandButton styleClass="btn-login" look="danger btn-block"  action="#{loginBean.logar}" 
+					value="Logar" size="lg" />
+
+			</h:form>
+		</div>
+	</div>
+
+</h:body>
+
+</html>

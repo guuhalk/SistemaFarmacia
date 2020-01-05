@@ -1,0 +1,54 @@
+html, body {
+	min-height: 100vh;
+	min-width: 100vw;
+	margin: 0;
+}
+
+.content {
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.content .modal {
+	height: 50%;
+	min-height: 300px;
+	width: 50%;
+	min-width: 300px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0
+		rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	padding: 20px;
+}
+
+.content .modal form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content .modal form img {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.content .modal form .input-group-def {
+	width: 70%;
+}
+
+.content .modal form .input-group-def .input-form {
+	width: 100%
+}
+
+.content .modal form .btn-login {
+	width: 70%;
+	padding: 5px;
+    font-size: 16px;
+    border-radius: 3px;
+}
