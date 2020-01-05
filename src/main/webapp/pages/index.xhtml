@@ -7,13 +7,62 @@
 
 
 	<ui:define name="content">
-	
-	
-	
-	
-	
-	
-	
+		<h:outputStylesheet name="index.css" library="css" />
+		
+		<b:row styleClass="rowDashboard" >
+		
+		<b:column visible="xs" styleClass="col">
+			
+						<b:column span="12" styleClass="colBtn" >
+							<b:commandLink styleClass="cardCel" look="default" >
+								<b:image library="assets" name="cadastro.png" style="width:21%;" />
+							</b:commandLink>
+						</b:column>
+						
+						<b:column span="12" >
+							<b:commandLink styleClass="cardCel" look="default" >
+								<b:image library="assets" name="frenteCaixa.png" style="width:21%;" />
+								
+					
+							</b:commandLink>
+						</b:column>
+						
+						<b:column span="12" >
+							<b:commandLink styleClass="cardCel" look="default" >
+								<b:image library="assets" name="report.png" style="width:21%;" />
+							</b:commandLink>
+						</b:column>
+						
+				
+				</b:column>
+		
+		
+			
+				<b:column span="4" visible="sm,md,lg">
+					<b:commandLink styleClass="card" look="default" >
+						<b:image library="assets" name="cadastro.png" style="width:21%;" />
+						<br></br>
+						<b>Cadastros</b>
+					</b:commandLink>
+				</b:column>
+				
+				<b:column span="4" visible="sm,md,lg">
+					<b:commandLink styleClass="card" look="default" >
+						<b:image library="assets" name="frenteCaixa.png" style="width:21%;" />
+						<br></br>
+						<b>Frente de Caixa</b>
+					</b:commandLink>
+				</b:column>
+				
+				<b:column span="4" visible="sm,md,lg">
+					<b:commandLink styleClass="card" look="default" >
+						<b:image library="assets" name="report.png" style="width:21%;" />
+						<br></br>
+						<b>Relatorios</b>
+					</b:commandLink>
+				</b:column>
+			</b:row>
+
 	</ui:define>
 
 

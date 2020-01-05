@@ -1,0 +1,36 @@
+.rowDashboard{
+	background: #bd2625;
+	height: 300px;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	
+}
+
+
+
+.card{
+	width: 80%;
+	height: 100px;
+	margin:auto;
+	margin-top:25%;
+	background: white;
+	text-align: center
+	
+}
+
+.cardCel{
+	width: 65%;
+	height: 70px;
+	margin:auto;
+	margin-top:5%;
+	background: white;
+	text-align: center
+	
+}
+
+#j_idt35_canvas{
+	margin: 0px !important;
+    display: block;
+    width: 888px !important;
+    height: 330px !important;
+}
