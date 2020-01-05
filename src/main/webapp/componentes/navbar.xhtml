@@ -4,8 +4,7 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui"
-	xmlns:b="http://bootsfaces.net/ui">
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui">
 
 
 <h:head>
@@ -17,61 +16,68 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 	</f:facet>
 
-	<h:outputStylesheet name="webjars/font-awesome/4.4.0/css/font-awesome.css" />
+	<h:outputStylesheet
+		name="webjars/font-awesome/4.4.0/css/font-awesome.css" />
 
 	<title>MedFarma</title>
-	
+
 
 </h:head>
 
 <h:body>
-	
+
 	<h:outputStylesheet name="navbar.css" library="css" />
-	
+
 	<b:column visible="xs" style="padding: 0;">
-		
+
 		<div class="navbar">
-			
-			<p:commandLink oncomplete="PF('sidebar2').show()" styleClass="bntMenu">
+
+			<p:commandLink oncomplete="PF('sidebar2').show()"
+				styleClass="bntMenu">
 				<i class="fa fa-align-justify"></i>
-			 </p:commandLink>
-			
+			</p:commandLink>
+
 			<div class="logo">
 				<img src="../resources/assets/logoNav.png" alt="logo" />
 			</div>
-			
-			<p:commandLink styleClass="bntLogout" >
+
+			<p:commandLink styleClass="bntLogout">
 				<i class="fa fa-sign-out"></i>
 			</p:commandLink>
-		
+
 
 		</div>
-		
+
 	</b:column>
 
-	<b:column visible="sm,md,lg" style="padding: 0;" >
+	<b:column visible="sm,md,lg" style="padding: 0;">
 		<div class="navbarTela">
-			
-			<p:commandLink oncomplete="PF('sidebar2').show()" styleClass="bntMenuTela">
+
+			<p:commandLink oncomplete="PF('sidebar2').show()"
+				styleClass="bntMenuTela">
 				<i class="fa fa-align-justify"></i>
 			</p:commandLink>
-			
+
 			<div class="logoTela">
 				<img src="../resources/assets/logoNav.png" alt="logo" />
 			</div>
-			
-			<p:commandLink styleClass="bntLogoutTela" >
+
+			<p:commandLink styleClass="bntLogoutTela">
 				<i class="fa fa-sign-out"></i>
 			</p:commandLink>
 
 		</div>
 	</b:column>
-	
-	
+
+
 	<p:sidebar widgetVar="sidebar2" baseZIndex="10000">
-			
+		<div class="sb-header">
+			<span></span>
+			<div class="sb-header-profile"></div>
+			<div class="sb-header-content"><span>Bem vindo </span><span>Caio</span><span>!</span></div>
+		</div>
 	</p:sidebar>
-	
+
 	<ui:insert name="content"></ui:insert>
 
 </h:body>

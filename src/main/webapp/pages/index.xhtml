@@ -2,66 +2,35 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:b="http://bootsfaces.net/ui"
-	xmlns:p="http://primefaces.org/ui" template="/componentes/navbar.xhtml">
+	xmlns:b="http://bootsfaces.net/ui" xmlns:p="http://primefaces.org/ui"
+	template="/componentes/navbar.xhtml">
 
 
 	<ui:define name="content">
 		<h:outputStylesheet name="index.css" library="css" />
-		
-		<b:row styleClass="rowDashboard" >
-		
-		<b:column visible="xs" styleClass="col">
-			
-						<b:column span="12" styleClass="colBtn" >
-							<b:commandLink styleClass="cardCel" look="default" >
-								<b:image library="assets" name="cadastro.png" style="width:21%;" />
-							</b:commandLink>
-						</b:column>
-						
-						<b:column span="12" >
-							<b:commandLink styleClass="cardCel" look="default" >
-								<b:image library="assets" name="frenteCaixa.png" style="width:21%;" />
-								
-					
-							</b:commandLink>
-						</b:column>
-						
-						<b:column span="12" >
-							<b:commandLink styleClass="cardCel" look="default" >
-								<b:image library="assets" name="report.png" style="width:21%;" />
-							</b:commandLink>
-						</b:column>
-						
-				
-				</b:column>
-		
-		
-			
-				<b:column span="4" visible="sm,md,lg">
-					<b:commandLink styleClass="card" look="default" >
-						<b:image library="assets" name="cadastro.png" style="width:21%;" />
-						<br></br>
-						<b>Cadastros</b>
-					</b:commandLink>
-				</b:column>
-				
-				<b:column span="4" visible="sm,md,lg">
-					<b:commandLink styleClass="card" look="default" >
-						<b:image library="assets" name="frenteCaixa.png" style="width:21%;" />
-						<br></br>
-						<b>Frente de Caixa</b>
-					</b:commandLink>
-				</b:column>
-				
-				<b:column span="4" visible="sm,md,lg">
-					<b:commandLink styleClass="card" look="default" >
-						<b:image library="assets" name="report.png" style="width:21%;" />
-						<br></br>
-						<b>Relatorios</b>
-					</b:commandLink>
-				</b:column>
-			</b:row>
+
+		<div class="main">
+			<div class="item-card">
+				<b:commandLink styleClass="card" look="default">
+					<b:image library="assets" name="cadastro.png" style="width:21%;" />
+					<b>Cadastros</b>
+				</b:commandLink>
+			</div>
+
+			<div  class="item-card">
+				<b:commandLink styleClass="card" look="default">
+					<b:image library="assets" name="frenteCaixa.png" style="width:21%;" />
+					<b>Frente de Caixa</b>
+				</b:commandLink>
+			</div>
+
+			<div class="item-card">
+				<b:commandLink styleClass="card" look="default">
+					<b:image library="assets" name="report.png" style="width:21%;" />
+					<b>Relatorios</b>
+				</b:commandLink>
+			</div>
+		</div>
 
 	</ui:define>
 
