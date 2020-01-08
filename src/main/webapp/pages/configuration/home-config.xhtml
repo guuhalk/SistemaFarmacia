@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui" xmlns:p="http://primefaces.org/ui"
+	template="/componentes/navbar.xhtml">
+
+
+	<ui:define name="content">
+		<h:outputStylesheet name="home-config.css" library="css" />
+		<div class="main">
+			
+			<h:form styleClass="row-content">
+				<b:commandLink styleClass="card-item" value="Usuário" action="#{homeConfigBean.redirectUserConfig}"/>
+				<b:commandLink styleClass="card-item" value="Perfil" />
+				<b:commandLink styleClass="card-item" value="Documetação" />
+				<b:commandLink styleClass="card-item" value="Ajuda" />
+				<b:commandLink styleClass="card-item" value="Contato" />
+			</h:form>
+		</div>
+	</ui:define>
+
+
+</ui:composition>
