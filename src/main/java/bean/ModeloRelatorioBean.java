@@ -22,7 +22,7 @@ import org.primefaces.model.charts.optionconfig.title.Title;
 
 @ManagedBean
 @ViewScoped
-public class GraficoIndexBean implements Serializable {
+public class ModeloRelatorioBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private BarChartModel barModel;

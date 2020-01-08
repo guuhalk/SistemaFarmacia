@@ -72,7 +72,7 @@
 @media (min-width: 576px) {
 	.main {
 		min-height: 300px;
-
+		background: #bd2625;
 	}
 }
 

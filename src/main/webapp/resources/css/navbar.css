@@ -17,7 +17,7 @@ div.navbar div.logo {
 	text-align: center;
 }
 
-div.navbar div.logo img {
+div.navbar div.logo .img-logo {
 	width: 15%;
 	min-width: 100px
 }
@@ -82,7 +82,7 @@ div.navbarTela div.logoTela {
 	width: 100%;
 }
 
-div.navbarTela div.logoTela img {
+div.navbarTela div.logoTela .img-logo {
 	width: 11%;
 	max-width: 155px;
 }
@@ -90,12 +90,13 @@ div.navbarTela div.logoTela img {
 /* Sidebar */
 .sb-header {
 	height: 300px;
-	background-color: #FFE53B;
-	background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+	background-color: #dd8844;
+	background-image: linear-gradient(45deg, #dd8844 0%, #bd2525 52%, #771100 90%);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
+	display: flex;
 }
 
 .sb-header .sb-header-profile {
@@ -132,7 +133,12 @@ div.navbarTela div.logoTela img {
 }
 
 @media ( min-width : 576px) {
-	div.navbarTela div.logoTela img {
+	div.navbarTela div.logoTela .img-logo {
 		width: 20%;
 	}
+}
+
+.glyphicon {
+	margin-right: 20px;
+	font-size: 20px;
 }

@@ -38,7 +38,7 @@
 			</p:commandLink>
 
 			<div class="logo">
-				<img src="../resources/assets/logoNav.png" alt="logo" />
+				<b:image library="assets" name="logoNav.png" styleClass="img-logo" />
 			</div>
 
 			<p:commandLink styleClass="bntLogout">
@@ -59,7 +59,7 @@
 			</p:commandLink>
 
 			<div class="logoTela">
-				<img src="../resources/assets/logoNav.png" alt="logo" />
+				<b:image library="assets" name="logoNav.png" styleClass="img-logo" />
 			</div>
 
 			<p:commandLink styleClass="bntLogoutTela">
@@ -73,8 +73,35 @@
 	<p:sidebar widgetVar="sidebar2" baseZIndex="10000">
 		<div class="sb-header">
 			<span></span>
-			<div class="sb-header-profile"></div>
-			<div class="sb-header-content"><span>Bem vindo </span><span>Caio</span><span>!</span></div>
+			<!-- 			<div class="sb-header-profile"
+				style="background: url('../resources/assets/user.png'); background-position: center; background-size: cover"></div> -->
+			<b:image library="assets" name="user.png"
+				styleClass="sb-header-profile" />
+			<div class="sb-header-content">
+				<span>Bem vindo </span><span>Caio</span><span>!</span>
+			</div>
+		</div>
+		<div class="sb-content">
+			<h:form>
+				<b:listLinks>
+
+					<!-- <b:navLink header="BootsFaces" /> -->
+					<b:navLink value="Cadastros" icon="glyphicon glyphicon-copy"
+						iconAlign="left" />
+					<b:navLink value="Estoque" icon="glyphicon glyphicon-folder-close"
+						iconAlign="left" />
+					<b:navLink value="Frente de caixa"
+						icon="glyphicon glyphicon-barcode" iconAlign="left" />
+					<b:navLink value="Relatórios" icon="glyphicon glyphicon-stats"
+						iconAlign="left" />
+					<b:navLink value="Financeiro" icon="glyphicon glyphicon-usd"
+						iconAlign="left" />
+					<b:navCommandLink value="Configurações"
+						icon="glyphicon glyphicon-cog" iconAlign="left"
+						action="#{indexBean.redirectConfig}" />
+
+				</b:listLinks>
+			</h:form>
 		</div>
 	</p:sidebar>
 
